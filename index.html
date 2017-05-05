@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clock in HTML n Canvas</title>
+  <style>
+    body {
+      background-color: #626262;
+      margin: 0;
+    }
+    canvas {
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        width: 500px;
+        height: 500px;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0,0,0,0.2);
+    }
+    #myImage {
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <img id="myImage"/>
+
+<script>
+  var canvas = document.getElementById("canvas");
+  var ctx = canvas.getContext("2d");
+  var cw = canvas.width = canvas.scrollWidth;
+  var ch = canvas.height = canvas.scrollHeight;
+  var radius = cw/2;
+
+  //defaults
+  ctx.strokeStyle = "#40ccea";
+  ctx.lineWidth = 18;
+  ctx.lineCap = 'round';
+  ctx.shadowBlur = 10;
+  ctx.shadowColor = "#40ccea";
+  ctx.textAlign = "center";
+  ctx.baseAlign = "midle";
+  
+  function degToRad(degree) {
+    var factor = Math.PI/180;
+    return degree*factor;
+  }
+
+  function renderTime() {
+    var now = new Date();
+    var today = now.toDateString();
+    var time = now.toLocaleTimeString();
+    var hours = now.getHours();
+    var minutes = now.getMinutes();
+    var seconds = now.getSeconds();
+    var milliseconds = now.getMilliseconds();
+    var newSeconds = seconds + (milliseconds/1000);
+
+    // Background
+    var gradient = ctx.createRadialGradient(cw/2,ch/2,5,cw/2,ch/2,cw);
+
+    gradient.addColorStop(0, '#145062');
+    gradient.addColorStop(1, '#000');
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, cw, ch);
+
+    // Hours
+    ctx.beginPath();
+    ctx.arc(cw/2, ch/2, radius-40, degToRad(270), degToRad((hours*15)-90));
+    ctx.stroke();
+
+    // Minutes
+    ctx.beginPath();
+    ctx.arc(cw/2, ch/2, radius-80, degToRad(270), degToRad((minutes*6)-90));
+    ctx.stroke();
+
+    // Seconds
+    ctx.beginPath();
+    ctx.arc(cw/2, ch/2, radius-120, degToRad(270), degToRad((newSeconds*6)-90));
+    ctx.stroke();
+
+    // Date
+    ctx.font = "bold 25px Arial";
+    ctx.fillStyle = "#40ccea";
+    ctx.fillText(today, cw/2, ch/2-15)
+
+    // Time
+    ctx.font = "20px Arial";
+    ctx.fillStyle = "#40ccea";
+    ctx.fillText(time, cw/2, ch/2+15)
+
+    // To show canvas as a image 
+    var myImg = document.getElementById('myImage');
+    myImg.src = canvas.toDataURL();
+  }
+  setInterval(renderTime, 40);
+</script>
+
+</body>
+</html>
