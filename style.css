@@ -308,7 +308,7 @@ img.puzzle {
 /*****************/
 /**************/
 .parallax {
-  background-image: url("img/module-4.jpg");
+  background-image: url("module-4.jpg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -832,7 +832,7 @@ header {
     float: right;
   }
   .parallax {
-    background-image: url("img/module-4.jpg");
+    background-image: url("module-4.jpg");
     background-position: 54%;
     background-repeat: no-repeat;
     background-size: cover;
