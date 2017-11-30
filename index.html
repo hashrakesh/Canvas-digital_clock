@@ -1,100 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Clock in HTML n Canvas</title>
-  <style>
-    body {
-      background-color: #626262;
-      margin: 0;
-    }
-    canvas {
-        left: 50%;
-        position: absolute;
-        top: 50%;
-        width: 500px;
-        height: 500px;
-        transform: translate(-50%, -50%);
-        background-color: rgba(0,0,0,0.2);
-    }
-    #myImage {
-      width: 100px;
-    }
-  </style>
+  <meta charset="utf-8">
+  <title>Napp</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 </head>
 <body>
-  <canvas id="canvas"></canvas>
-  <img id="myImage"/>
-
-<script>
-  var canvas = document.getElementById("canvas");
-  var ctx = canvas.getContext("2d");
-  var cw = canvas.width = canvas.scrollWidth;
-  var ch = canvas.height = canvas.scrollHeight;
-  var radius = cw/2;
-
-  //defaults
-  ctx.strokeStyle = "#40ccea";
-  ctx.lineWidth = 18;
-  ctx.lineCap = 'round';
-  ctx.shadowBlur = 10;
-  ctx.shadowColor = "#40ccea";
-  ctx.textAlign = "center";
-  ctx.baseAlign = "midle";
-  
-  function degToRad(degree) {
-    var factor = Math.PI/180;
-    return degree*factor;
-  }
-
-  function renderTime() {
-    var now = new Date();
-    var today = now.toDateString();
-    var time = now.toLocaleTimeString();
-    var hours = now.getHours();
-    var minutes = now.getMinutes();
-    var seconds = now.getSeconds();
-    var milliseconds = now.getMilliseconds();
-    var newSeconds = seconds + (milliseconds/1000);
-
-    // Background
-    var gradient = ctx.createRadialGradient(cw/2,ch/2,5,cw/2,ch/2,cw);
-
-    gradient.addColorStop(0, '#145062');
-    gradient.addColorStop(1, '#000');
-    ctx.fillStyle = gradient;
-    ctx.fillRect(0, 0, cw, ch);
-
-    // Hours
-    ctx.beginPath();
-    ctx.arc(cw/2, ch/2, radius-40, degToRad(270), degToRad((hours*15)-90));
-    ctx.stroke();
-
-    // Minutes
-    ctx.beginPath();
-    ctx.arc(cw/2, ch/2, radius-80, degToRad(270), degToRad((minutes*6)-90));
-    ctx.stroke();
-
-    // Seconds
-    ctx.beginPath();
-    ctx.arc(cw/2, ch/2, radius-120, degToRad(270), degToRad((newSeconds*6)-90));
-    ctx.stroke();
-
-    // Date
-    ctx.font = "bold 25px Arial";
-    ctx.fillStyle = "#40ccea";
-    ctx.fillText(today, cw/2, ch/2-15)
-
-    // Time
-    ctx.font = "20px Arial";
-    ctx.fillStyle = "#40ccea";
-    ctx.fillText(time, cw/2, ch/2+15)
-
-    // To show canvas as a image 
-    var myImg = document.getElementById('myImage');
-    myImg.src = canvas.toDataURL();
-  }
-  setInterval(renderTime, 40);
-</script>
-
+  <header>
+    <a href="#home"><img src="img/N_logo (1).png" class="logo" alt="logo"></a>
+    <nav>
+      <ul id="mainNav">
+        <li class="active"><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#service">SERVICES</a></li>
+        <li><a href="#gallery">GALLERY</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+    <button type="button" name="button" class="menu-btn"><i class="fa fa-bars"></i></button>
+  </header>
+  <!-- banner section-->
+  <div class="banner">
+    <div class="for_scroll" id="home"></div>
+      <div class="banner_left">
+      <h2>New App Landing page</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolorin reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Esncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    <div class="banner_right">
+      <img src="img/phone2.png" class="banner_img" alt="banner image">
+      <img src="img/phone1.png" class="banner1_img" alt="banner image">
+    </div>
+  </div>
+  <div class="main">
+    <div class="for_scroll" id="about"></div>
+     <h2>ABOUT US</h2>
+      <div class="wrapper">
+        <div class="left">
+        <img src="img/idea.png" alt="features" class="feature">
+        <h3>FEATURES</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. aliquip ex ea commodo consequat. deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="right">
+        <img src="img/gears.png" alt="quality" class="gears">
+        <h3>QUALITY</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. aliquip ex ea commodo consequat. deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="last">
+        <img src="img/puzzle.png" alt="design" class="puzzle">
+        <h3>DESIGN</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. aliquip ex ea commodo consequat. deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </div>
+  <div class="service">
+      <div class="for_scroll" id="service"></div>
+      <div class="service_left">
+      <img src="img/phones2.png" class="phone1" alt="phone_pic1">
+      <img src="img/phone3.png" class="phone2" alt="phone_pic2">
+      </div>
+      <div class="service_right">
+      <h2>SERVICE OF THIS APP</h2>
+      <div class="service_1st">
+      <img src="img/hourglass.png" class="service_img" alt="service_time">
+      <p class="service1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div class="service_last">
+      <img src="img/team.png" class="service_img" alt="service_team">
+      <p class="service2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+  </div>
+  <div class="parallax">
+     <div class="black-transparent">
+      <div class="reviews">
+      <img src="img/comment-white-oval-bubble.png" alt="review">
+      </div>
+      <p class="page1"><strong>"</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ullamco laboriproident,consectetur adipisicing elit, sed do eiusmod tempor incididunt ut,consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut sunt in culpa qui officia deserunt mollit anim id est laborum.<strong>"</strong></p>
+      </div>
+  </div>
+  <div class="gallery">
+    <div class="for_scroll" id="gallery"></div>
+    <h2>GALLERY</h2>
+    <ul>
+      <li><img src="img/screen1.jpg" alt="mailbox"></li>
+      <li><img src="img/screen2.jpg" alt="climate"></li>
+      <li><img src="img/screen3.jpg" alt="calender"></li>
+      <li><img src="img/screen4.jpg" alt="time"></li>
+    </ul>
+  </div>
+  <footer>
+    <div class="contact1">
+      <div class="for_scroll" id="contact"></div>
+      <div class="about_contact">
+        <h3>ABOUT</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni.</p>
+        <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni.</p>
+      </div>
+      <div class="address">
+        <h3>VENUE</h3>
+        <address>
+        #354,4 Goldfield Rd.<br>
+        Honolulu, HI 96815,<br>
+        United States
+        </address>
+        <p>Phone: +14-34244-45837<br></p>
+        <p>Fax: +090-2222-2222</p>
+        <p>E-mail:newapp@outlook.com</p>
+      </div>
+      <div class="e_mail">
+        <h3>CONTACT</h3>
+        <form>
+        <input type="email" placeholder="e-mail address">
+        <button type="button" onclick="Submit">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+    <div class="copy_rights">
+      <p> New Landing App Company Pvt.Ltd.,copyrights&copy; 2017</p>
+    </div>
+  </footer>
+  <!-- <script src="script.js" charset="utf-8"></script> -->
+  <script>
+    $('button.menu-btn').click(function() {
+      $('ul#mainNav').slideToggle();
+    })
+    $('ul#mainNav li').click(function() {
+      if($('button.menu-btn').css('display') == 'block') {
+        $('ul#mainNav').slideToggle();
+        $('ul#mainNav li').removeClass('active');
+        $(this).addClass('active');
+      }
+    })
+    window.addEventListener("resize",function() {
+      if($('button.menu-btn').css('display') == 'none') {
+        $('ul#mainNav').show();
+      } else if($('button.menu-btn').css('display') == 'block') {
+        $('ul#mainNav').hide();
+      }
+    });
+  </script>
 </body>
+
 </html>
