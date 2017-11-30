@@ -717,7 +717,7 @@ header {
     background: linear-gradient(135deg, rgba(237, 144, 23, 0.9) 0%, rgba(246, 230, 180, 0.9) 100%);
   }
   .banner p {
-    font-size: 14px;
+    font-size: 15px;
   }
   .banner_left {
     width:100%;
@@ -774,17 +774,17 @@ header {
   }
 
   .main .left p {
-    font-size: 12px;
+    font-size: 15px;
     padding-left: 12px;
     padding-right: 12px;
 }
 .main .right p {
-    font-size: 12px;
+    font-size: 15px;
     padding-left: 12px;
     padding-right: 12px;
 }
 .main .last p {
-    font-size: 12px;
+    font-size: 15px;
     padding-left: 12px;
     padding-right: 12px;
 }
@@ -799,10 +799,10 @@ header {
     position: relative;
   }
   .service1 {
-    font-size: 12px;
+    font-size: 14px;
   }
   .service2 {
-    font-size: 12px;
+    font-size: 14px;
   }
   .service_left {
     width: 100%;
@@ -854,7 +854,7 @@ header {
   }
   .page1 {
     padding: 0 30px;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.6;
     color:#fff;
     }
@@ -888,6 +888,13 @@ header {
     height: auto;
     padding-bottom: 10px;
     /* padding-right: 5px; */
+  }
+    .about_contact > p {
+    font-size: 15px;
+    font-weight: 400;
+ }
+  address{
+    font-size:15px;
   }
   .address {
     width: 100%;
