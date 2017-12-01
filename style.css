@@ -710,14 +710,17 @@ header {
     color:#ef9f36;
   }
   .banner {
-    width:100%;
+    width:134%;
     padding: 50px 7px;
     position: relative;
     margin-top: 57px;
     background: linear-gradient(135deg, rgba(237, 144, 23, 0.9) 0%, rgba(246, 230, 180, 0.9) 100%);
   }
+  .banner_left > h2 {
+    font-size: 35px;
+}
   .banner p {
-    font-size: 15px;
+    font-size: 21px;
   }
   .banner_left {
     width:100%;
@@ -732,7 +735,6 @@ header {
     height: 40%;
     position: absolute;
     left: 55%;
-    bottom: 17%;
     transform: translate(-50%);
     top: auto;
   }
@@ -741,12 +743,15 @@ header {
     height: 40%;
     position: absolute;
     left: 50%;
-    bottom: 13%;
+    bottom: -4%;
     transform: translate(-50%);
     top: auto;
   }
   .main {
-    padding:50px 50px;
+    width:134%;
+  }
+  .main > h2 {
+    font-size: 35px;
   }
   .main .wrapper {
     display:inline;
@@ -760,31 +765,39 @@ header {
   }
   .main .left {
     width:100%;
-    height:250px;
+    height:379px;
   }
   .main .right {
     width:100%;
-    height:250px;
+    height:379px;
     margin-top:30px;
   }
   .main .last {
     width:100%;
-    height:250px;
+    height:379px;
     margin-top:30px;
   }
-
+  .main .left h3 {
+    font-size: 27px;
+  }  
   .main .left p {
-    font-size: 15px;
+    font-size: 21px;
     padding-left: 12px;
     padding-right: 12px;
 }
+  .main .right h3 {
+    font-size: 27px;
+  }  
 .main .right p {
-    font-size: 15px;
+    font-size: 21px;
     padding-left: 12px;
     padding-right: 12px;
 }
+  .main .last h3 {
+    font-size: 27px;
+  }  
 .main .last p {
-    font-size: 15px;
+    font-size: 21px;
     padding-left: 12px;
     padding-right: 12px;
 }
@@ -793,16 +806,20 @@ header {
   }
   .service {
     background:#ef8e12ad;
-    /* margin-top: 30px; */
+    width:134%;
     padding: 50px 30px;
     height: 823px;
     position: relative;
   }
+  .service_right > h2 {
+    font-size: 35px;
+    text-align:center;
+  }
   .service1 {
-    font-size: 14px;
+    font-size: 21px;
   }
   .service2 {
-    font-size: 14px;
+    font-size: 21px;
   }
   .service_left {
     width: 100%;
@@ -815,17 +832,13 @@ header {
     width: auto;
     height: 40%;
     position: absolute;
-    left: 273px;
-    /* bottom: -25px; */
-    top: 450px;
+    bottom: -25px;
   }
-
   .service .phone2 {
     width: auto;
     height: 39%;
     position: absolute;
-    left: 160px;
-    top: 450px;
+    top: 688px;
   }
   .service_right {
     width: 100%;
@@ -836,34 +849,32 @@ header {
     background-position: 54%;
     background-repeat: no-repeat;
     background-size: cover;
-    /* position: relative; */
+    width:134%;
     background-attachment: fixed;
-    /* padding: 100px 120px; */
     opacity: 0.7;
     height: 364px;
   }
   .black-transparent {
     background-color: rgba(0,0,0,0.15);
     width: 100%;
-    height: 250px;
+    height: 450px;
     margin: 0px auto;
-    /* margin-top: 46px; */
-    /* padding-top: 6px; */
     position: relative;
     top: 57px;
   }
   .page1 {
     padding: 0 30px;
-    font-size: 15px;
+    font-size: 21px;
     line-height: 1.6;
     color:#fff;
     }
   .gallery {
+    width: 134%;
     margin: 0;
     position: relative;
   }
   .gallery > h2 {
-    padding-top:25px;
+    padding-top:35px;
     text-align: center;
     font-size: 25px;
     font-weight: 500;
@@ -873,6 +884,7 @@ header {
     display:inline;
   }
   footer {
+    width:134%;
     background: #333;
     height: auto;
     color: #fff;
@@ -887,26 +899,51 @@ header {
     width: 100%;
     height: auto;
     padding-bottom: 10px;
-    /* padding-right: 5px; */
   }
+  .about_contact > h3 {
+    font-size: 27px;
+}
     .about_contact > p {
-    font-size: 15px;
+    font-size: 21px;
     font-weight: 400;
  }
+  .address > h3 {
+    font-size: 27px;
+    font-weight: 400;
+}
   address{
-    font-size:15px;
+    font-size:21px;
   }
+  .address > p {
+    font-size: 20px;
+    font-weight: 400;
+}
   .address {
     width: 100%;
     height: auto;
-    /* padding-right: 5px; */
     padding-bottom: 10px;
   }
+  .e_mail > h3 {
+    font-size: 27px;
+    font-weight: 400;
+}
   .e_mail {
     width: 100%;
     height:70px;
-    /*height: 250px;*/
-    /* padding-right: 5px; */
   }
-
+  input[type="email"] {
+    width: 65%;
+    block-size: 48px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 3px;
 }
+  button {
+    padding:16px 10px;
+    font-size:15px;
+}
+  .copy-rights{
+    padding: 25px 42px;
+  }
+}
+    
