@@ -739,9 +739,8 @@ header {
     height: 40%;
     position: absolute;
     left: 50%;
-    bottom: -4%;
     transform: translate(-50%);
-    top: auto;
+    top: 66%;
   }
   .main {
     width:100%;
@@ -804,7 +803,7 @@ header {
     background:#ef8e12ad;
     width:100%;
     padding: 50px 30px;
-    height: 1500px;
+    height: 880px;
     position: relative;
   }
   .service_right > h2 {
@@ -825,16 +824,10 @@ header {
     padding-top: 17px;
   }
   .service .phone1 {
-    width: auto;
-    height: 40%;
-    position: absolute;
-    top: 49%;
+    dispaly: none;
   }
   .service .phone2 {
-    width: auto;
-    height: 40%;
-    position: absolute;
-    top: 49%;
+   display: none;
   }
   .service_right {
     width: 100%;
