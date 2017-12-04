@@ -456,197 +456,6 @@ input[type="email"] {
   text-align:center;
 }
 
-/*Tablet view*/
-@media only screen and (min-width:768px) and (max-width:992px) {
-  header .logo {
-    left:45px;
-    height:45px;
-  }
-  header .menu-btn {
-    display: inline-block;
-    position: absolute;
-    right: 100px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  header .menu-btn:hover {
-    background: #fff;
-    color:#ef9f36;
-  }
-  header {
-    position: fixed;
-    width: 100%;
-    top: 0px;
-    background: #ef9f36;
-    z-index: 99;
-    border-bottom: solid 1px #fff;
-}
-header {
-    height:78px;
-}
-  nav ul {
-    padding: 0;
-    width: 100%;
-    position: fixed;
-    top: 62px;
-    left: 0;
-    background: #ef9f36;
-    text-align: center;
-    display: none;
-  }
-  nav ul li {
-    float: none;
-    display: block;
-    /*padding: 10px 0;*/
-    margin-left: 0px;
-  }
-  nav ul li:first-child:hover {
-    /*padding-top:5px;*/
-  }
-  nav ul li a {
-    padding : 10px 0;
-    display: block;
-  }
-  nav ul li a:hover {
-    background: rgba(255,255,255,0.8);
-    color:#ef9f36;
-  }
-  nav ul li.active a {
-    background: #fff;
-    color:#ef9f36;
-  }
-  .banner {
-    padding: 41px 45px;
-  }
-  .banner_left > h2 {
-    font-size: 26px;
-  }
-  .banner p {
-    font-size: 12px;
-  }
-  .banner_img {
-    width: auto;
-    height: 85%;
-    right: 43px;
-    top: 19%;
-  }
-  .banner1_img {
-    width: auto;
-    height: 85%;
-    right: 87px;
-    top: 30%;
-  }
-  .main {
-    position: relative;
-    padding: 40px 40px;
-    /* margin-top: 120px; */
-  }
-  .main .left h3 {
-    font-size: 18px;
-  }
-  .main .left p {
-    font-size: 10px;
-  }
-  .main .right h3 {
-    font-size: 18px;
-  }
-  .main .right p {
-    font-size: 10px;
-  }
-  .main .last h3 {
-    font-size: 18px;
-  }
-  .main .last p {
-    font-size: 10px;
-  }
-  .service {
-    padding: 30px 40px;
-    height: 420px;
-    background: #ef8e12ad;
-  }
-  .service .phone1 {
-    height: 81%;
-    left: 170px;
-  }
-  .service .phone2 {
-    width: auto;
-    height: 80%;
-    position: absolute;
-  }
-  .service_right {
-    padding-left: 69px;
-  }
-  .service_1st {
-    padding-top: 5px;
-  }
-  .service1 {
-    font-size: 10px;
-    margin: 0px;
-    padding: 10px 1px;
-    line-height: 1.2;
-  }
-  .service_last {
-    padding-top: 40px;
-  }
-  .service2 {
-    font-size: 10px;
-    margin: 0px;
-    padding: 10px 1px;
-    line-height: 1.2;
-  }
-  .reviews {
-    align-items: center;
-    padding: 15px 0;
-    text-align: center;
-  }
-  .page1 {
-    font-size: 13px;
-    line-height: 1.6;
-    color:#fff;
-  }
-  .gallery > h2 {
-    margin: 0;
-    padding: 25px;
-  }
-  .gallery ul {
-    margin: 0;
-    padding: 10px 92px;
-    text-align: center;
-  }
-  .contact1 {
-    margin: 0px auto;
-    width: 100%;
-    padding: 21px 45px;
-    display: inline-flex;
-    justify-content: space-between;
-    position: relative;
-  }
-  .about_contact > p {
-    font-size: 12px;
-    font-weight: 400;
-  }
-  address {
-    font-size: 11px;
-  }
-
-  input[type="email"] {
-    width: 65%;
-    block-size: 30px;
-    padding-left: 9px;
-    border: none;
-    border-radius: 3px;
-  }
-  button {
-    font-size: 11px;
-    border: none;
-    background: orange;
-    color: #fff;
-    padding: 9px 10px;
-    border-radius: 3px;
-    /*background-color: #orange;*/
-  }
-}
-
 /*****************/
 /* MOBILE SCREEN */
 /*****************/
@@ -944,3 +753,195 @@ header {
   }
 }
     
+/*Tablet view*/
+@media only screen and (min-width:0px) and (max-width:992px) {
+  header .logo {
+    left:45px;
+    height:45px;
+  }
+  header .menu-btn {
+    display: inline-block;
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  header .menu-btn:hover {
+    background: #fff;
+    color:#ef9f36;
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    background: #ef9f36;
+    z-index: 99;
+    border-bottom: solid 1px #fff;
+}
+header {
+    height:78px;
+}
+  nav ul {
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    top: 62px;
+    left: 0;
+    background: #ef9f36;
+    text-align: center;
+    display: none;
+  }
+  nav ul li {
+    float: none;
+    display: block;
+    /*padding: 10px 0;*/
+    margin-left: 0px;
+  }
+  nav ul li:first-child:hover {
+    /*padding-top:5px;*/
+  }
+  nav ul li a {
+    padding : 10px 0;
+    display: block;
+  }
+  nav ul li a:hover {
+    background: rgba(255,255,255,0.8);
+    color:#ef9f36;
+  }
+  nav ul li.active a {
+    background: #fff;
+    color:#ef9f36;
+  }
+  .banner {
+    padding: 41px 45px;
+  }
+  .banner_left > h2 {
+    font-size: 26px;
+  }
+  .banner p {
+    font-size: 12px;
+  }
+  .banner_img {
+    width: auto;
+    height: 85%;
+    right: 43px;
+    top: 19%;
+  }
+  .banner1_img {
+    width: auto;
+    height: 85%;
+    right: 87px;
+    top: 30%;
+  }
+  .main {
+    position: relative;
+    padding: 40px 40px;
+    /* margin-top: 120px; */
+  }
+  .main .left h3 {
+    font-size: 18px;
+  }
+  .main .left p {
+    font-size: 10px;
+  }
+  .main .right h3 {
+    font-size: 18px;
+  }
+  .main .right p {
+    font-size: 10px;
+  }
+  .main .last h3 {
+    font-size: 18px;
+  }
+  .main .last p {
+    font-size: 10px;
+  }
+  .service {
+    padding: 30px 40px;
+    height: 420px;
+    background: #ef8e12ad;
+  }
+  .service .phone1 {
+    height: 81%;
+    left: 170px;
+  }
+  .service .phone2 {
+    width: auto;
+    height: 80%;
+    position: absolute;
+  }
+  .service_right {
+    padding-left: 69px;
+  }
+  .service_1st {
+    padding-top: 5px;
+  }
+  .service1 {
+    font-size: 10px;
+    margin: 0px;
+    padding: 10px 1px;
+    line-height: 1.2;
+  }
+  .service_last {
+    padding-top: 40px;
+  }
+  .service2 {
+    font-size: 10px;
+    margin: 0px;
+    padding: 10px 1px;
+    line-height: 1.2;
+  }
+  .reviews {
+    align-items: center;
+    padding: 15px 0;
+    text-align: center;
+  }
+  .page1 {
+    font-size: 13px;
+    line-height: 1.6;
+    color:#fff;
+  }
+  .gallery > h2 {
+    margin: 0;
+    padding: 25px;
+  }
+  .gallery ul {
+    margin: 0;
+    padding: 10px 92px;
+    text-align: center;
+  }
+  .contact1 {
+    margin: 0px auto;
+    width: 100%;
+    padding: 21px 45px;
+    display: inline-flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  .about_contact > p {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  address {
+    font-size: 11px;
+  }
+
+  input[type="email"] {
+    width: 65%;
+    block-size: 30px;
+    padding-left: 9px;
+    border: none;
+    border-radius: 3px;
+  }
+  button {
+    font-size: 11px;
+    border: none;
+    background: orange;
+    color: #fff;
+    padding: 9px 10px;
+    border-radius: 3px;
+    /*background-color: #orange;*/
+  }
+}
+
+
