@@ -918,3 +918,13 @@ input[type="email"] {
   }
 }
 
+@media only screen and (max-width:365px) {
+  .address > p {
+    font-size: 12px;
+    font-weight: 400;
+}
+  input[type="email"] {
+    width: 52%;
+  }
+}
+
