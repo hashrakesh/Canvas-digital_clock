@@ -791,7 +791,7 @@ input[type="email"] {
     background:#ef8e12ad;
     width:100%;
     margin:0 auto;
-    height: 930px;
+    height: auto;
     position: relative;
   }
   .service_right > h2 {
@@ -807,6 +807,9 @@ input[type="email"] {
   .service_left {
     width: 100%;
   }
+  .service_last{
+    padding:0px;
+  }
   .service_img {
     padding-top: 17px;
   }
@@ -819,6 +822,7 @@ input[type="email"] {
   .service_right {
     width: 100%;
     float: none;
+    padding: 0px;
   }
   .parallax {
     background-image: url("module-4.jpg");
