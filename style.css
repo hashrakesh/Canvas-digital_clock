@@ -652,6 +652,9 @@ header {
 
 @media only screen and (max-width:768px) {
   /* HEADER*/
+  header {
+    position: fixed;
+  }
   nav ul {
     padding: 0;
     width: 100%;
@@ -754,9 +757,7 @@ header {
   }
   .main {
     position: relative;
-    padding:50px 30px;
-    /*margin-top: 57px;*/
-    /*margin-top:120px;*/
+    margin:0 auto;
   }
   .main .left {
     width:100%;
@@ -796,13 +797,10 @@ header {
     padding-left: 12px;
     padding-right: 12px;
 }
-  .for_scroll {
-    height: 68px;
-  }
   .service {
     background:#ef8e12ad;
     width:100%;
-    padding: 50px 30px;
+    margin:0 auto;
     height: 930px;
     position: relative;
   }
@@ -859,7 +857,7 @@ header {
     }
   .gallery {
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
     position: relative;
   }
   .gallery > h2 {
@@ -879,6 +877,7 @@ header {
     width:100%;
     background: #333;
     height: auto;
+    margin:0 auto;
     color: #fff;
   }
   .contact1 {
