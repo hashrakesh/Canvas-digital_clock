@@ -3,6 +3,8 @@
 }
 *{
   box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
 }
 .for_scroll {
   position: absolute;
