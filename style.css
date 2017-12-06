@@ -675,7 +675,7 @@ input[type="email"] {
   header {
     position: fixed;
     width: 100%;
-    padding:40px;
+    height: 78px;
     top: 0px;
     background: #ef9f36;
     z-index: 99;
