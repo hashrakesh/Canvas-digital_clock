@@ -709,6 +709,7 @@ input[type="email"] {
 }
   .banner p {
     font-size: 21px;
+    padding: 0px;
   }
   .banner_left {
     width:100%;
@@ -808,7 +809,6 @@ input[type="email"] {
   }
   .service_left {
     width: 100%;
-    /* padding: 0px 77px; */
   }
   .service_img {
     padding-top: 17px;
@@ -821,7 +821,7 @@ input[type="email"] {
   }
   .service_right {
     width: 100%;
-    float: right;
+    float: none;
   }
   .parallax {
     background-image: url("module-4.jpg");
