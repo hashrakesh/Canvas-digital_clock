@@ -694,9 +694,9 @@ input[type="email"] {
   }
   .banner {
     width:100%;
-    padding: 50px 7px;
+    padding: 25px 10px;
     position: relative;
-    margin-top: 57px;
+    margin-top: 0px;
     background: linear-gradient(135deg, rgba(237, 144, 23, 0.9) 0%, rgba(246, 230, 180, 0.9) 100%);
   }
   .banner_left > h2 {
