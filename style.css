@@ -875,6 +875,7 @@ input[type="email"] {
   }
   .about_contact > h3 {
     font-size: 27px;
+    padding: 10px;
 }
     .about_contact > p {
     font-size: 21px;
@@ -883,6 +884,7 @@ input[type="email"] {
   .address > h3 {
     font-size: 27px;
     font-weight: 400;
+    padding: 10px;
 }
   address{
     font-size: 16px;
@@ -899,6 +901,7 @@ input[type="email"] {
   .e_mail > h3 {
     font-size: 27px;
     font-weight: 400;
+    padding: 10px;
 }
   .e_mail {
     width: 100%;
