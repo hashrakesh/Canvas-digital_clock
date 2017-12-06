@@ -858,10 +858,10 @@ input[type="email"] {
     font-weight: 500;
   }
   .gallery ul{
-    padding:10px 56px;
+    padding:0px;
   }
   .screen {
-    padding: 45px 77px;
+    padding: 0px;
     display:inline;
   }
   footer {
