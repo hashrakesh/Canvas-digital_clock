@@ -481,9 +481,6 @@ input[type="email"] {
     z-index: 99;
     border-bottom: solid 1px #fff;
 }
-header {
-    height:78px;
-}
   nav ul {
     padding: 0;
     width: 100%;
