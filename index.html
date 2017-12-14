@@ -129,24 +129,24 @@
       </div>
   </footer>
       <!-- scripts starts -->
-  <script>
-  $('button.menu-btn').click(function() {
-    $('ul#mainNav').slideToggle();
-  })
-  $('ul#mainNav li').click(function() {
-    if($('button.menu-btn').css('display') == 'block') {
-      $('ul#mainNav').slideToggle();
-      $('ul#mainNav li').removeClass('active');
-      $(this).addClass('active');
-    }
-  })
-  window.addEventListener("resize",function() {
-    if($('button.menu-btn').css('display') == 'none') {
-      $('ul#mainNav').show();
-    } else if($('button.menu-btn').css('display') == 'block') {
-      $('ul#mainNav').hide();
-    }
-  });
-  </script>
+      <script>
+        $('button.menu-btn').click(function() {
+          $('ul#mainNav').slideToggle();
+        })
+        $('ul#mainNav li').click(function() {
+          if($('button.menu-btn').css('display') == 'block') {
+          $('ul#mainNav').slideToggle();
+          $('ul#mainNav li').removeClass('active');
+          $(this).addClass('active');
+          }
+        })
+        window.addEventListener("resize",function() {
+          if($('button.menu-btn').css('display') == 'none') {
+          $('ul#mainNav').show();
+          } else if($('button.menu-btn').css('display') == 'block') {
+          $('ul#mainNav').hide();
+          }
+        });
+      </script>
     </body>
 </html>
